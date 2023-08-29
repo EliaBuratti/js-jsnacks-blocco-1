@@ -12,17 +12,28 @@ let total = 0;
 
 //creo un loop dove chiedo di inserire 10 volte dei numeri
 for (let i = 0; i < 10; i++) {
+
+    //chiedo all'utente di inserire dei numeri
+    const userInputNum = Number(prompt('Inserisci un numero da 1 a infinito'));
+
+    //verifico che ci siano solo numeri 
+    if ((isNaN(userInputNum)) || (userInputNum == "") || (userInputNum == "undefined")) {
+
+        alert('Rispetta la richiesta');
+        window.location.reload();
+        break; // interrompo il ciclo
+
+    } else {
+        //stampo in console i numeri
+        console.log(`Il ${i + 1}° numero inserito è ${userInputNum}`);
     
-    //chiedo all'utente di inserire dei numeri e li stampo in console
-    const userInputNum = Number(prompt('Inserisci un numero'));
-    console.log(`Il ${i + 1}° numero inserito è ${userInputNum}`);
-
-    //aggiungo i numeri all'array
-    userNum.push(userInputNum);
-    console.log(`array aggiornato ${userNum}`);
-
-    //sommo tutti i numeri dell'array
-    total += Number(userNum[i]);
+        //aggiungo i numeri all'array
+        userNum.push(userInputNum);
+        console.log(`array aggiornato ${userNum}`);
+    
+        //sommo tutti i numeri dell'array
+        total += Number(userNum[i]);
+    }
 };
 
 console.log('La somma totale è: ', total);

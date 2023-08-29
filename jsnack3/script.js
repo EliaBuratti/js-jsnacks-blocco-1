@@ -7,11 +7,10 @@ Il programma stampa la somma di tutti i numeri inseriti. */
 const userNum =[];
 console.log(userNum);
 
-//creo una costante vuota dove calocolo il totale
+//creo una costante vuota dove calcolo il totale
 let total = 0;
 
 //creo un loop dove chiedo di inserire 10 volte dei numeri
-
 for (let i = 0; i < 10; i++) {
     
     //chiedo all'utente di inserire dei numeri e li stampo in console

@@ -6,13 +6,14 @@ se è dispari inseriscilo nell’array. */
 //creo una costante dove andrò ad inserire tutti i numeri dispari
 const oddNum = [];
 
+//creo un ciclo dove chiedo 6 volte all'utente di inserire dei numeri
 for (let i = 0; i < 6; i++) {
     
     //chiedo all'utente di inserire dei numeri e li stampo in console
     const userNum = Number(prompt('Inserisci dei numeri'));
     console.log(`il ${i + 1}° numero inserito è: ${userNum}`);
 
-    //identificoi numeri dispari e li metto nell'array
+    //identifico i numeri dispari e li metto nell'array
     if (userNum % 2 !== 0) {
         oddNum.push(userNum);
     }

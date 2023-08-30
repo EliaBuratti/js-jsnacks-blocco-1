@@ -34,7 +34,6 @@ while (i < 2) {
 
    if (isNaN(userNum)) {
     alert('inserisci solo numeri');
-    i--
 
    } else {
     num.push(userNum);

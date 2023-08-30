@@ -34,8 +34,14 @@ let i = 0;
 while (i < 2) {
 
     const userWord = prompt('inserisci una parola a tuo piacimento');
-    word.push(userWord);
-    i++
+
+    if (!isNaN(userWord) ) {
+        alert('compila i campi correttamente!');
+
+    } else {
+        word.push(userWord);
+        i++
+    }
 }
 
 //verifico la lunghezza delle parole e poi le stampo in console a seconda della loro lunghezza

@@ -16,3 +16,39 @@ if (firstNumber > secondNumber) {
 } else {
     console.log('il numero maggiore è', secondNumber);
 };
+
+
+
+
+// da fare con il ciclo while
+let num = [];
+
+let i = 0;
+while (i < 2) {
+    
+    //creo prompt per chiedere di iserire i numeri
+   const userNum = Number(prompt('inserisci un numero'));
+
+
+   //verifico che sia un numero 
+
+   if (isNaN(userNum)) {
+    alert('inserisci solo numeri');
+    i--
+
+   } else {
+    num.push(userNum);
+    i++
+
+   }
+};
+
+
+//comparo i numeri inseriti e ottengo quello piu alto
+
+if (num[0] > num[1]) {
+    console.log(`Il numero maggiore è: ${num[0]}`);
+
+    } else {
+    console.log(`Il numero maggiore è: ${num[1]}`);
+}

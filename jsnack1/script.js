@@ -42,12 +42,16 @@ while (i < 2) {
    }
 };
 
-
 //comparo i numeri inseriti e ottengo quello piu alto
 
 if (num[0] > num[1]) {
     console.log(`Il numero maggiore è: ${num[0]}`);
 
+    } else if (num[0] === num[1]) {
+        console.log('i numeri sono uguali');
+
     } else {
-    console.log(`Il numero maggiore è: ${num[1]}`);
+        console.log(`Il numero maggiore è: ${num[1]}`);
+        
 }
+
